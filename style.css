@@ -1,0 +1,65 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+
+html{
+  direction: rtl;
+  font-size:25px;
+  line-height:20px;
+  font-family:'Varela Round', sans-serif;
+  font-weight: 500;
+}
+
+
+#title h1{
+  
+font-size: 70px;
+font-family: 'Varela Round', sans-serif;
+margin-top: 30px;
+text-align: center;
+color: cornflowerblue;
+ 
+}
+
+form{
+
+width: 60%;
+font-size: 20px; 
+margin:100px auto;
+box-shadow: 0 1px 0.5rem rgba(0, 0,0,1);
+border-radius: 1rem;
+text-align: center;
+font-family: 'Varela Round', sans-serif;
+
+}
+
+.button{
+font-size: 20px;
+border-radius: 1rem;
+font-family:'Varela Round', sans-serif;
+
+
+}
+
+
+body {
+  background: #ffffff;
+}
+
+
+
+.music{
+ text-align: center;
+ background-color:#ffffff;
+}
+
+
+.form-control{
+  width: 100%;
+  position: center;
+}
+
+
