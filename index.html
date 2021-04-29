@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+            crossorigin="anonymous"></script>
+  <link rel="icon" href="images/favicon (30).ico">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Baby Shark!</title>
+
+</head>
+
+<body>
+
+  <audio autoplay controls src="yt1s.com - Baby Shark Original Extended.mp3"></audio>
+
+  <script language="javascript" type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.4.22/p5.js"></script>
+  <script language="javascript" type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.3/addons/p5.dom.min.js"></script>
+  <script language="javascript" type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+  <script language="javascript" type="text/javascript" src="js/sketch.js"></script>
+
+  
+
+  <div id="title">
+    <h1><b>איך תדעי שאת בהריון?</b></h1>
+  </div>
+ 
+  <div class="form-container">
+
+    <form>
+     
+    <lable><b>כמה פרטי לבוש לא עולים עלייך?</b>
+      <input  class="form-control" id="cloths" type="cloths" name="cloths"
+      pattern="^[\u0590-\u05fe]+\s[\u0590-\u05fe]+$">
+    </lable><br><br>
+  
+     
+      <lable><b>האם את סובלת מבחילה?</b>
+        <input class="form-control" id="suffer" type="kindof" name="suffer">
+      </lable><br><br>
+
+      <lable><b>האם את כועסת על בעלך בלי סיבה?</b>
+        <input class="form-control" id="angry" type="angry" name="angry">
+      </lable><br><br>
+
+      <label><b>האם בא לך מלפפון חמוץ עם שוקולד לפעמים?</b>
+        <input class="form-control" id="pikle" type="pikles" name="suffer">
+      </label><br><br>
+
+      <label><b>מה המאנצ' האהוב עלייך?</b>
+        <input type="munch" class="form-control"  name="munch">
+      </label><br><br>
+
+      <label><b>האם את רגישה לריחות?</b>
+        <input type="smell" class="form-control"  name="smell" id="smell">
+      </label><br><br>
+
+
+      <label>כמה את שונאת את בעלך?
+        0%<input class="form-control-range" id="temper" type="range" name="temper" min="0" max="100">100%
+      </label><br><br>
+        
+
+      <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label">מה התקרית הכי מביכה שהייתה לך?</label>
+        <textarea class="form-control" id="textarea" name="address" rows="3" cols="30"></textarea>
+      </div>
+  
+
+
+      <div class="form-group">
+        <span><b>באיזה מקומות נרדמת?</b></span>&nbsp&nbsp
+        <label><input type="checkbox" name="interests[]" value="reading book" id ="check" class="checOne"> באסלה</label>&nbsp&nbsp
+        <label><input type="checkbox" name="interests[]" value="children" id ="check" class="checOne"> תא מדידה</label>&nbsp&nbsp
+        <label><input type="checkbox" name="interests[]" value="sleaping" id ="check" class="checOne"> בעבודה</label>&nbsp&nbsp
+        <label><input type="checkbox" name="interests[]" value="studing" id ="check" class="checOne"> אצל חמתי על
+          הספה</label>&nbsp&nbsp
+      </div><br>
+
+      <div class="form-group">
+        <span><b>ממה את סובלת בלילות?</b></span>&nbsp&nbsp
+        <label><input type="radio" name="gender" id="suffer" value="female"> צרבות</label>&nbsp&nbsp
+        <label><input type="radio" name="gender"  id="suffer"  value="male" checked> התכבצויות ברגליים</label>&nbsp&nbsp
+      </div><br>
+      
+    
+      <label>מה גורם לך לבכות?
+        <select class="form-select" aria-label="Default select example">
+          <option value="1" selected></option>
+          <option value="2" selected>כששום בגד לא עולה עלייך</option>
+          <option value="3" selected>הסרט- היומן </option>
+          <option value="4" selected>כשמזגת קולה במקום חלב לקפה</option>
+          <option value="5" selected>שבא לך ללכת לישון אבל הבית נראה כמו זירת קרב</option>
+          <option value="6" selected>שרצית כ"כ סמבוסק 80 והיה סגור</option>
+          <option value="6" selected>שחזרת הביתה ושכחת את המפתח בעבודה</option>
+        </select><br><br>
+      </label><br>
+
+
+    </section>
+    <input id="submit" type="submit" value="לבדיקת שני פסים או שניים" class=" btn btn-primary"><br><br>
+
+    </section>
+    </form>
+  </div>
+
+  
+
+ 
+
+</body>
+
+</html>
+
